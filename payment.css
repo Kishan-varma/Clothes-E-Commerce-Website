@@ -1,0 +1,132 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.payment-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-details div {
+    width: 48%;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.back-link {
+    display: block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Payment Method Section Styles */
+#payment-method-section {
+    margin-bottom: 20px;
+}
+
+#payment-method-section label {
+    font-size: 16px;
+}
+
+#payment-method-section select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#continue-btn {
+    width: 100%;
+    padding: 12px;
+    background-color:#007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#continue-btn:hover {
+    background-color: #0056b3;
+}
+
+/* COD Confirmation Styles */
+#cod-confirmation {
+    text-align: center;
+}
+
+#cod-confirmation p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#cod-confirm-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#cod-confirm-btn:hover {
+    background-color: #e0a800;
+}

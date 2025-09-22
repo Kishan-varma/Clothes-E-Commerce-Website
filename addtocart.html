@@ -1,0 +1,23 @@
+<!-- cart.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="addtocart.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+
+    <div class="cart-page">
+        <h2>Your Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+        </ul>
+        <p id="total-price">Total: $0.00</p>
+        <button class="checkout" onclick="checkout()">Proceed to Checkout</button>
+    </div>
+
+    <script src="addtocart.js"></script> <!-- Link to your JavaScript file for cart logic -->
+</body>
+</html>

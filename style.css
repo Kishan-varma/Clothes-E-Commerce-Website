@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text&display=swap');
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+:root {
+    --main-color:black;
+    --text-color:#000;
+    --bg-color:#fff;
+    --container-color:#1e1e2a;
+}
+body{
+    color: var(--text-color);
+    background:var(--bg-color);
+}
+header{
+    position: fixed;
+    width:100%;
+    top:0;
+    right:0;
+    z-index:1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 5%;
+    background-color: #fff;
+}
+
+.logo img{
+    max-width: 120px;
+    height: auto;
+}
+.navmenu{
+    display: flex;
+}
+.navmenu a{
+    color: #000;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 800;
+    transition: all .42s ease;
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-icon i{
+    margin-right: 20px;
+    color: #000000;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease ;
+    
+}
+.profile{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 20px;
+}
+.profile a{
+    display: flex;
+    gap: 20px;
+}
+.profile p .signup{
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #000;
+}
+.profile p .login{
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #fff;
+}
+.profile p .logout{
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #fff;
+}
+.signup{
+    border-radius: 30px;
+    padding: 8px 15px;  
+    border: 2px solid #000; 
+    background-color: #fff; 
+    color: #000;
+    font-size: 14px; 
+    font-weight: 800; 
+    text-transform: capitalize; 
+    transition: all .42s ease;
+}
+.signup:hover{
+    background-color: #000;
+    color: #fff; 
+}
+.login{
+    border-radius: 30px;
+    padding: 8px 15px;  
+    border: 2px solid #000; 
+    background-color:#000; 
+    color: #fff;
+    font-size: 14px; 
+    font-weight: 800; 
+    text-transform: capitalize; 
+    transition: all .42s ease;
+}
+.login:hover{
+    background-color: #fff; 
+    color: #000;
+}
+/* Logout Button */
+.logout {
+    border-radius: 30px;
+    padding: 8px 15px;  
+    border: 2px solid #000; 
+    background-color: #fff; 
+    color: #000;
+    font-size: 14px; 
+    font-weight: 800; 
+    text-transform: capitalize; 
+    transition: all .42s ease;
+}
+.logout:hover {
+    background-color: #000; 
+    color: #fff;
+}
+
+#menu-icon{
+    display: none;
+    font-size: 35px;
+    color:#000000;
+    z-index: 10001;
+    cursor: pointer;
+}
+header.sticky{
+    background:#fff;
+    padding: 8px 5%;
+    box-shadow: 0px 0px 10px rgb(0,0,0 /10%);
+}
+/*trending-section*/
+.center-text h2{
+    color:#111;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 120px;
+}
+.product{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,auto));
+    gap: 2rem;
+    margin-top: 40px;
+}
+.row{
+    position: relative;
+    transition: all .40s;
+}
+.row img{
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+}
+.row img:hover{
+    transform: scale(0.9);
+}
+.product-text h5{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #27b737;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+.heart-icon{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+}
+.heart-icon:hover{
+    color: #EE1C47;
+}
+.rating i{
+    color:#FF8C00;
+    font-size: 18px;
+}
+.price h4{
+    color:#111;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.price p{
+    color:#151515;
+    font-size: 14px;
+    font-weight: 600;
+}
+.home{
+    position: relative;
+    top: 100px;
+    margin-top: 20px;
+    background:#fff;
+    min-height: 600px;
+    width: 100%;
+    height:10vh;
+    background-image: url(images/banner-3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    align-items: center;
+}
+.main-text h1{
+    color:#000000;
+    font-size: 35px;
+    font-family: 400;
+    padding-left: 13px;
+}
+.main-text p{
+    
+    font-size: 25px;
+    font-family: 400;
+    font-style: italic;
+    margin-bottom: 100px;
+    margin-top: 10px;
+    margin-left: 13px;
+}
+.main-btn{
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    border: 2px solid black;
+    padding: 12px 15px;
+    transition: all .42s ease;
+    margin-left: 20px;
+}
+.main-btn:hover{
+    background-color: black;
+    color: white;
+}
+.main-btn i{
+    vertical-align: middle;
+}
+.footer{
+    background-color:#fff;
+    position: relative;
+    top:5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.quick-link h2{
+    font-size: 20px;
+    font-family:cursive;
+    font-weight: 100;
+    color: #000000;
+    padding:10px;
+    
+}
+.quick-link p{
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding:10px;
+    color:#000000;
+}
+.user-link h3{
+    font-size: 20px;
+    font-family:cursive;
+    font-weight: 100;
+    color:#000000;
+    padding:10px;
+    
+    
+}
+.user-link p{
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding: 10px;
+    color:#000000;
+}
+.location h3{
+    font-size: 20px;
+    font-family:cursive;
+    font-weight: 100;
+    color: #000000;
+    padding:10px;
+    
+    
+}
+.location p{
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding:10px;
+    color:#000000;
+}
+.contact-info h3{
+    font-size: 20px;
+    font-family:cursive;
+    font-weight: 100;
+    color:#000000;
+    padding:10px;
+    
+    
+}
+.contact-info p{
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding:10px;
+    color:#000000;
+}
+.contact-info i{
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding:10px;
+    color:#000000;
+}

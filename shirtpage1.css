@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text&display=swap');
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+:root {
+    --main-color:black;
+    --text-color:#000;
+    --bg-color:#fff;
+    --container-color:#1e1e2a;
+}
+body{
+    color: var(--text-color);
+    background:var(--bg-color);
+}
+header{
+    position: fixed;
+    width:100%;
+    top:0;
+    right:0;
+    z-index:1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 5%;
+    background-color:var(--bg-color);
+}
+
+.logo img{
+    max-width: 120px;
+    height: auto;
+}
+.navmenu{
+    display: flex;
+}
+.navmenu a{
+    color: #000;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 800;
+    transition: all .42s ease;
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-icon i{
+    margin-right: 20px;
+    color: #000000;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease ;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 20px;
+}
+.profile a{
+    display: flex;
+    gap: 20px;
+}
+.profile p .signup{
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #000;
+}
+.profile p .login{
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #fff;
+}
+
+.signup{
+    border-radius: 30px;
+    padding: 8px 15px;  
+    border: 2px solid #000; 
+    background-color: #fff; 
+    color: #000;
+    font-size: 14px; 
+    font-weight: 800; 
+    text-transform: capitalize; 
+    transition: all .42s ease;
+}
+.signup:hover{
+    background-color: #000;
+    color: #fff; 
+}
+.login{
+    border-radius: 30px;
+    padding: 8px 15px;  
+    border: 2px solid #000; 
+    background-color:#000; 
+    color: #fff;
+    font-size: 14px; 
+    font-weight: 800; 
+    text-transform: capitalize; 
+    transition: all .42s ease;
+}
+.login:hover{
+    background-color: #fff; 
+    color: #000;
+}
+#menu-icon{
+    display: none;
+    font-size: 35px;
+    color:#000000;
+    z-index: 10001;
+    cursor: pointer;
+}
+header.sticky{
+    background:var(--bg-color);
+    padding: 8px 5%;
+    box-shadow: 0px 0px 10px rgb(0,0,0 /10%);
+}
+.shirt{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,auto));
+    gap: 2rem;
+    margin-top: 150px;
+}
+.tshirt{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,auto));
+    gap: 2rem;
+    margin-top: 150px;
+}
+.jeans{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,auto));
+    gap: 2rem;
+    margin-top: 150px;
+}
+.tops{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,auto));
+    gap: 2rem;
+    margin-top: 150px;
+}
+.wjeans{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,auto));
+    gap: 2rem;
+    margin-top: 150px;
+}
+.row{
+    position: relative;
+    transition: all .40s;
+}
+.row img{
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+}
+.row img:hover{
+    transform: scale(0.9);
+}
+.product-text h5{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #27b737;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+.rating i{
+    color:#FF8C00;
+    font-size: 18px;
+}
+.price h4{
+    color:#111;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.price p{
+    color:#151515;
+    font-size: 14px;
+    font-weight: 600;
+}
+.pagination{
+    text-align: center;
+}
+.pagination a{
+    color: #000;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+.pagination a.active{
+    background-color:darkcyan;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all .42s ease;
+}
+.pagination a:hover:not(.active){
+    background-color: hsl(0,0%,66%);
+    border-radius: 5px;
+}
+.footer{
+    background-color:var(--bg-color);
+    position: relative;
+    top:5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.quick-link h2{
+    font-size: 20px;
+    font-family:cursive;
+    font-weight: 100;
+    color: #000000;
+    padding:10px;
+    
+}
+.quick-link p{
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding:10px;
+    color:#000000;
+}
+.user-link h3{
+    font-size: 20px;
+    font-family:cursive;
+    font-weight: 100;
+    color:#000000;
+    padding:10px;
+    
+    
+}
+.user-link p{
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding: 10px;
+    color:#000000;
+}
+.location h3{
+    font-size: 20px;
+    font-family:cursive;
+    font-weight: 100;
+    color: #000000;
+    padding:10px;
+    
+    
+}
+.location p{
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding:10px;
+    color:#000000;
+}
+.contact-info h3{
+    font-size: 20px;
+    font-family:cursive;
+    font-weight: 100;
+    color:#000000;
+    padding:10px;
+    
+    
+}
+.contact-info p{
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding:10px;
+    color:#000000;
+}
+.contact-info i{
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding:10px;
+    color:#000000;
+}
+/*responsive code*/
+@media(max-width:890px){
+    header{
+        padding: 20px 3%;
+        transition: .4s;
+    }
+}
+@media(max-width:750px){
+    .navmenu{
+        position: absolute;
+        top: 100%;
+        right:-100%;
+        width: 300px;
+        height: 130vh;
+        background: #edfff1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 30px;
+        transition: all .42s;
+    }
+    .navmenu a{
+        display: block;
+        margin: 18px 0;
+
+    }
+    .navmenu.open{
+        right: 0;
+    }
+}
+@media(max-width: 768px){
+    #menu-icon {
+    display: block; /* Show on mobile screens */
+    }
+}
